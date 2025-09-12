@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>David O. Decker — Artist Tribute</title>
+
+  <!-- SEO/Open Graph (edit these) -->
+  <meta name="description" content="A tribute to David O. Decker (1936—2017), contemporary mixed-media artist." />
+  <meta property="og:title" content="David O. Decker — Artist Tribute" />
+  <meta property="og:description" content="A tribute to David O. Decker (1936—2017), contemporary mixed-media artist." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/favicon/social-preview.jpg" />
+  <link rel="icon" href="assets/favicon/favicon.ico" />
+
+  <link rel="preload" href="assets/css/global.css" as="style" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+</head>
+<body>
+  <!-- Animated geometric background -->
+  <div id="bg-tiles" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="artist-name">David O. Decker</h1>
+      <p class="artist-subtitle">Professor & Artist (1936—2017)</p>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Primary">
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#biography" class="nav-link" data-section="biography">Biography</a></li>
+        <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+        <li>
+          <a href="#" id="music-toggle" class="nav-link music-toggle" role="button">
+            ▶ Play Music
+          </a>
+        </li>
+      </ul>
+    </div>
+    <audio id="site-audio" src="data/music/tribute-track.mp3" preload="none"></audio>
+  </nav>
+
+  <section id="home" class="section active" aria-label="Home">
+    <section class="hero-carousel" aria-label="Featured photos">
+      <div class="hero-slides" id="hero-slides"></div>
+    </section>
+  </section>
+
+  <main class="container">
+    <section id="biography" class="section" aria-labelledby="bio-heading">
+      <div class="bio-section">
+        <img
+          src= "data/key_images/headshot.jpg"
+          alt="Portrait of David O. Decker"
+          class="headshot"
+          width="400" height="300" loading="lazy" />
+        <div class="bio-content">
+          <h2 id="bio-heading">About David</h2>
+          <p class="bio-text">
+            David was a visionary artist and professor. 
+          </p>
+          <p class="bio-text">
+            Born in Toledo, Ohio, he had his art education at Marlboro College in Vermont, at the University of Wisconsin in Milwaukee, at the Brooklyn Museum School in Brooklyn, and at New York University in New York. 
+          </p>
+          <p class="bio-text">
+            Throughout her career, Elena explored themes of memory, displacement, and technology…
+          </p>
+          <p class="bio-text">
+            Elena's legacy continues to inspire artists worldwide…
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading" class="sr-only">Gallery</h2>
+
+      <div class="filter-controls" role="tablist" aria-label="Artwork filters">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Works</button>
+        <button class="filter-btn" data-filter="ink" role="tab" aria-selected="false">Pen & Ink</button>
+        <button class="filter-btn" data-filter="wood" role="tab" aria-selected="false">Wood Reliefs</button>
+        <button class="filter-btn" data-filter="etch" role="tab" aria-selected="false">Intaglio</button>
+        <button class="filter-btn" data-filter="jazz" role="tab" aria-selected="false">Jazz</button>
+        <button class="filter-btn" data-filter="lit" role="tab" aria-selected="false">Literature</button>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid" aria-live="polite"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-text">
+      </p>
+    </div>
+  </footer>
+
+  <div class="modal" id="artwork-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="close-modal" aria-label="Close">&times;</button>
+    <div class="modal-content">
+      <img src="" alt="" class="modal-image" id="modal-image" />
+      <div class="modal-info">
+        <h3 class="modal-title" id="modal-title"></h3>
+        <p class="modal-details" id="modal-details"></p>
+        <p class="modal-story" id="modal-story"></p>
+        <div class="artwork-tags" id="modal-tags"></div>
+      </div>
+    </div>
+  </div>
+
+  <noscript>
+    This site works best with JavaScript enabled. A text-only version can be provided upon request.
+  </noscript>
+
+  <script src="assets/js/audio.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/bg-tiles.js" defer></script>
+  <script src="assets/js/hero-carousel.js" defer></script>
+
+</body>
+</html>

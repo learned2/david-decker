@@ -1,0 +1,691 @@
+/* =============================
+   Reset & base
+============================= */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+
+/* =============================
+   Fonts (uploaded)
+============================= */
+@font-face {
+  font-family: 'Elegant Typewriter';
+  src: url('../fonts/ELEGANT TYPEWRITER Light.ttf') format('truetype');
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Elegant Typewriter';
+  src: url('../fonts/ELEGANT TYPEWRITER Regular.ttf') format('truetype');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Elegant Typewriter';
+  src: url('../fonts/ELEGANT TYPEWRITER Bold.ttf') format('truetype');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+/* =============================
+   1950s avant-garde palette
+============================= */
+:root{
+  --ink: #e9e4d8;        /* warm light ink for dark bg */
+  --paper: #f5efe2;      /* warm off-white "paper" */
+  --bg-deep: #0f0f12;    /* inky charcoal */
+  --bg-soft: #17171c;    /* softer charcoal for cards */
+
+  --vermillion: #e0392d; /* striking red-orange */
+  --teal: #0aa3a3;       /* mid-century aqua/teal */
+  --mustard: #caa300;    /* muted mustard */
+
+  --accent: var(--vermillion);
+  --rule: rgba(233,228,216,0.18);
+  --shadow: 0 12px 50px rgba(0,0,0,.35);
+}
+
+/* =============================
+   Background image + overlay
+============================= */
+body{
+  position: relative;
+  /* NOTE: from assets/css → ../../data/... */
+  background: url("../../data/photos/background.png") center / cover no-repeat fixed;
+  color: var(--ink);
+  font-family: 'Elegant Typewriter', Georgia, serif;
+  line-height: 1.65;
+}
+
+/* One overlay only (darken + subtle duotone) */
+body::before{
+  content:"";
+  position: fixed; inset: 0;
+  z-index: -1; /* below content, above body background */
+  pointer-events: none;
+  background:
+    linear-gradient(145deg, rgba(14,14,18,0.75) 0%, rgba(14,14,18,0.6) 30%, rgba(224,57,45,0.08) 60%, rgba(10,163,163,0.12) 100%),
+    radial-gradient(1200px 1200px at 10% -10%, rgba(224,57,45,0.10), transparent 60%),
+    radial-gradient(1200px 1200px at 110% 110%, rgba(10,163,163,0.10), transparent 60%);
+  backdrop-filter: saturate(90%) blur(0.5px);
+}
+
+/* Base color if image fails */
+html{ background: var(--bg-deep); }
+
+/* =============================
+   Layout
+============================= */
+.container{ max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* Header (black per your request) */
+.site-header{
+  background: #000;
+  padding: 3.25rem 0 2.25rem;
+  text-align: center;
+  color: var(--ink);
+  border-bottom: 1px solid var(--rule);
+}
+.artist-name{
+  font-size: clamp(2.4rem, 4.2vw, 3.4rem);
+  font-weight: 700; letter-spacing: .08em; text-transform: uppercase; line-height: 1.15;
+}
+.artist-subtitle{
+  font-size: 1rem; letter-spacing: .16em; opacity: .85; margin-top: .6rem; text-transform: uppercase;
+}
+
+/* Nav */
+.site-nav{
+  position: sticky; top: 0; z-index: 100;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background: rgba(15, 15, 18, 0.25);
+  border-bottom: 1px solid rgba(233, 228, 216, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+.nav-links{
+  list-style: none; display: flex; justify-content: center; gap: 2.2rem; padding: .9rem 0;
+}
+.nav-links a{
+  text-decoration: none; color: var(--ink);
+  font-weight: 400; letter-spacing: .12em; text-transform: uppercase;
+  position: relative; padding-bottom: 6px; transition: color .2s ease;
+}
+.nav-links a::after{
+  content:""; position: absolute; left: 0; right: 0; bottom: 0;
+  height: 2px; transform: scaleX(0); transform-origin: left;
+  background: var(--accent); transition: transform .25s ease;
+}
+.nav-links a:hover{ color: var(--paper); }
+.nav-links a:hover::after, .nav-links a.active::after{ transform: scaleX(1); }
+
+/* Music button styling - exact copy of nav links */
+.music-btn {
+  /* Reset all button styles */
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  /* Apply exact nav-link styles */
+  text-decoration: none; 
+  color: var(--ink);
+  font-weight: 400; 
+  letter-spacing: .12em; 
+  text-transform: uppercase;
+  position: relative; 
+  padding-bottom: 6px; 
+  transition: color .2s ease;
+}
+
+.music-btn::after{
+  content:""; 
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+  height: 2px; 
+  transform: scaleX(0); 
+  transform-origin: left;
+  background: var(--accent); 
+  transition: transform .25s ease;
+}
+
+.music-btn:hover{ 
+  color: var(--paper); 
+}
+
+.music-btn:hover::after{ 
+  transform: scaleX(1); 
+}
+
+.music-btn:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Remove Firefox button inner styling */
+.music-btn::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Sections */
+.section{ padding: 4.5rem 0; display: none; }
+.section.active{ display: block; }
+
+/* Special case: home section should have no padding to allow full-height carousel */
+#home.section{ padding: 0; }
+#home.section.active{ display: block; }
+
+/* Bio */
+.bio-section{
+  display: grid; grid-template-columns: minmax(240px, 320px) 1fr;
+  gap: clamp(1.6rem, 3vw, 3rem); align-items: start;
+}
+.headshot{
+  width: 100%; border-radius: 8px; box-shadow: var(--shadow); border: 1px solid var(--rule);
+}
+.bio-content h2{
+  font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+  margin-bottom: 1rem; color: var(--paper); text-transform: uppercase; letter-spacing: .1em;
+}
+.bio-text{
+  font-size: 1.06rem; margin-bottom: 1.2rem; text-align: justify; color: var(--ink); opacity: .92;
+}
+
+/* Filters */
+.filter-controls{
+  display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 0rem; margin-bottom: 1rem; justify-content: center;
+}
+
+/* Mobile responsive adjustments for gallery spacing */
+@media (max-width: 768px) {
+  .filter-controls {
+    margin-bottom: 0.5rem;  /* Reduce gap on mobile */
+    gap: 0.5rem;           /* Smaller gap between buttons too */
+  }
+  
+  .gallery-grid {
+    margin-top: 0.5rem;    /* Reduce top margin on gallery grid */
+  }
+  
+  .filter-btn {
+    padding: 0.45rem 0.8rem;  /* Slightly smaller buttons on mobile */
+    font-size: 0.85rem;       /* Smaller text */
+  }
+}
+
+.filter-btn{
+  background: transparent; 
+  border: 1px solid var(--rule); 
+  color: var(--ink);
+  padding: .55rem 1rem; 
+  letter-spacing: .12em; 
+  text-transform: uppercase; 
+  cursor: pointer;
+  font-family: 'Elegant Typewriter', Georgia, serif;  /* Add the font family */
+  font-weight: 400;                                   /* Set consistent weight */
+  transition: transform .15s ease, background .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.filter-btn:hover{ transform: translateY(-1px); border-color: var(--accent); }
+.filter-btn.active{
+  background: linear-gradient(135deg, rgba(224,57,45,0.22), rgba(10,163,163,0.18));
+  border-color: var(--accent); color: var(--paper);
+}
+
+/* Gallery cards */
+.gallery-grid{
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.6rem; margin-top: 1rem;
+}
+.artwork-card{
+  background: linear-gradient(180deg, rgba(23,23,28,0.85), rgba(17,17,21,0.9));
+  border: 1px solid var(--rule); border-radius: 10px; overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  cursor: pointer;
+}
+.artwork-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 20px 80px rgba(0,0,0,.45);
+  border-color: rgba(224,57,45,0.35);
+}
+.artwork-image{ width: 100%; height: 230px; object-fit: cover; }
+.artwork-info{ padding: 1.2rem 1.3rem 1.4rem; }
+.artwork-title{
+  font-size: 1.05rem; font-weight: 700; margin-bottom: .35rem; color: var(--paper);
+  letter-spacing: .06em; text-transform: uppercase;
+}
+.artwork-details{ color: rgba(233,228,216,0.7); margin-bottom: .75rem; font-size: .95rem; }
+.artwork-tags{ display: flex; flex-wrap: wrap; gap: .4rem; }
+.tag{
+  background: transparent; border: 1px solid var(--rule); color: var(--ink);
+  padding: .25rem .55rem; border-radius: 999px; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase;
+}
+
+/* Modal */
+
+/* Full-Screen Modal */
+.modal{
+  display: none; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.9);        
+  backdrop-filter: blur(10px);          
+  z-index: 99999;                     /* Very high z-index */
+  align-items: center; 
+  justify-content: center;
+  padding: 2vw;                       /* Responsive padding */
+}
+
+.modal.active{ 
+  display: flex !important;            
+}
+
+.modal-content{
+  background: linear-gradient(180deg, rgba(23,23,28,0.95), rgba(16,16,20,0.95));
+  border: 1px solid var(--rule); 
+  border-radius: 12px;
+  width: 95vw;                        /* Take up 95% of viewport width */
+  height: 90vh;                       /* Take up 90% of viewport height */
+  max-width: 1400px;                  /* Cap at reasonable size for large screens */
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  overflow: hidden; 
+  box-shadow: 0 0 100px rgba(0,0,0,0.9);  
+  position: relative;
+  animation: modalFadeIn 0.4s ease-out;      
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-image{ 
+  width: 100%; 
+  height: 100%;                        
+  object-fit: contain;                 /* Show full image */
+  object-position: center;
+  background: rgba(0,0,0,0.8);         /* Dark background behind image */
+}
+
+.modal-info{ 
+  padding: 3rem; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start;         
+  overflow-y: auto;                    
+  background: linear-gradient(135deg, rgba(23,23,28,0.98), rgba(16,16,20,0.98));
+}
+
+.modal-title{
+  font-size: 2.2rem; 
+  margin-bottom: 1rem; 
+  color: var(--paper);
+  letter-spacing: .08em; 
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.modal-details{ 
+  font-size: 1.3rem; 
+  color: rgba(233,228,216,0.75); 
+  margin-bottom: 2rem; 
+}
+
+.modal-story{ 
+  font-size: 1.1rem; 
+  line-height: 1.8; 
+  margin-bottom: 2rem; 
+  color: var(--ink);
+}
+
+.modal-tags {
+  margin-top: auto;                    
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.modal-tags .tag {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+.close-modal{
+  position: absolute; 
+  top: 30px; 
+  right: 30px; 
+  color: var(--paper);
+  font-size: 3rem; 
+  cursor: pointer; 
+  background: rgba(0,0,0,0.8);         
+  border: 0; 
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease;
+  z-index: 100000;                    /* Highest possible z-index */
+  line-height: 1;
+}
+
+.close-modal:hover{ 
+  background: rgba(224,57,45,0.9);     
+  transform: scale(1.1); 
+}
+
+.close-modal:focus {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+  .modal-content {
+    width: 98vw;
+    height: 95vh;
+  }
+  
+  .modal-info {
+    padding: 2rem;
+  }
+  
+  .modal-title {
+    font-size: 1.8rem;
+  }
+  
+  .modal-details {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px){
+  .modal-content{ 
+    grid-template-columns: 1fr;        /* Single column on mobile */
+    width: 100vw;                      /* Full width on mobile */
+    height: 100vh;                     /* Full height on mobile */
+    border-radius: 0;                  /* No border radius on mobile for full screen */
+  }
+  
+  .modal {
+    padding: 0;                        /* No padding on mobile */
+  }
+  
+  .modal-image{ 
+    height: 50vh;                      /* Half screen for image on mobile */
+  }
+  
+  .modal-info {
+    padding: 1.5rem;
+    height: 50vh;                      /* Half screen for info on mobile */
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+  }
+  
+  .modal-details {
+    font-size: 1rem;
+  }
+  
+  .modal-story {
+    font-size: 0.95rem;
+  }
+  
+  .close-modal {
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 2.5rem;
+  }
+}
+
+/* =============================
+   Animated geometric background
+============================= */
+/* Base body color (behind the tiles) */
+body {
+  background: #0a0e27;
+}
+
+/* Background tile grid layer */
+#bg-tiles{
+  position: fixed;
+  inset: 0;
+  z-index: 0;              /* below content, above body background */
+  pointer-events: none;    /* don't block clicks */
+  display: grid;
+  grid-template-columns: repeat(var(--cols, 16), 1fr);
+  grid-template-rows: repeat(var(--rows, 10), 1fr);
+}
+
+/* Each tile fills its grid cell */
+#bg-tiles .tile { position: relative; }
+
+/* Morphing animation classes */
+.morph-navy     { animation: morphNavy     14s ease-in-out infinite; }
+.morph-midnight { animation: morphMidnight 18s ease-in-out infinite; }
+.morph-deep     { animation: morphDeep     22s ease-in-out infinite; }
+.morph-slate    { animation: morphSlate    16s ease-in-out infinite; }
+.morph-ocean    { animation: morphOcean    20s ease-in-out infinite; }
+.morph-steel    { animation: morphSteel    12s ease-in-out infinite; }
+
+/* Keyframes (same colors as your demo) */
+@keyframes morphNavy     { 0%,100%{background:#0f172a;} 25%{background:#1e293b;} 50%{background:#334155;} 75%{background:#1a202c;} }
+@keyframes morphMidnight { 0%,100%{background:#1e293b;} 33%{background:#0f172a;} 66%{background:#374151;} }
+@keyframes morphDeep     { 0%,100%{background:#334155;} 50%{background:#0a0e27;} }
+@keyframes morphSlate    { 0%,100%{background:#1a202c;} 25%{background:#334155;} 50%{background:#0f172a;} 75%{background:#1e293b;} }
+@keyframes morphOcean    { 0%,100%{background:#0a0e27;} 40%{background:#1a202c;} 80%{background:#374151;} }
+@keyframes morphSteel    { 0%,100%{background:#374151;} 50%{background:#1e293b;} }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  #bg-tiles .tile { animation: none !important; }
+}
+
+/* Make sure your content paints above the background */
+.site-header, .site-nav, main, .modal, .site-footer { position: relative; z-index: 2; }
+
+/* === Hero carousel with Adaptive Ken Burns effect === */
+.hero-carousel{
+  position: relative;
+  height: 150vh;
+  max-height: 790px;
+  min-height: 500px;
+  margin: 2rem auto;
+  max-width: 80%;
+  overflow: hidden;
+  z-index: 4;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.hero-slides{ 
+  position: absolute; 
+  inset: 0; 
+  z-index: 1;
+}
+
+.hero-slide{
+  position: absolute; 
+  inset: 0;
+  opacity: 0; 
+  transition: opacity 2s ease;
+  z-index: 1;
+}
+
+.hero-slide.active{ 
+  opacity: 1; 
+  z-index: 2;
+}
+
+.hero-slide img{
+  object-fit: cover;
+  filter: saturate(1.02) contrast(1.02);
+  transform-origin: center center;
+}
+
+/* TALL IMAGES - Vertical Ken Burns (top to bottom) */
+.hero-slide.tall.active img {
+  animation: kenBurnsTallDown 20s ease-in-out forwards;
+}
+
+.hero-slide.tall:nth-child(2n).active img {
+  animation: kenBurnsTallSlow 20s ease-in-out forwards;
+}
+
+/* WIDE IMAGES - Horizontal Ken Burns (left to right) */
+.hero-slide.wide.active img {
+  animation: kenBurnsWideRight 20s ease-in-out forwards;
+}
+
+.hero-slide.wide:nth-child(2n).active img {
+  animation: kenBurnsWideLeft 20s ease-in-out forwards;
+}
+
+/* SQUARE IMAGES - Gentle zoom */
+.hero-slide.square.active img {
+  animation: kenBurnsSquareZoom 20s ease-in-out forwards;
+}
+
+/* TALL IMAGE ANIMATIONS - Reduced zoom */
+@keyframes kenBurnsTallDown {
+  0% {
+    transform: translateY(0) scale(1.01);     /* Reduced from 1.05 */
+  }
+  80% {
+    transform: translateY(-15%) scale(1.02);  /* Reduced from 1.08 */
+  }
+  100% {
+    transform: translateY(-15%) scale(1.04);
+  }
+}
+
+@keyframes kenBurnsTallSlow {
+  0% {
+    transform: translateY(0) scale(1.00);     /* Reduced from 1.03 */
+  }
+  25% {
+    transform: translateY(-4%) scale(1.01);   /* Reduced from 1.04 */
+  }
+  50% {
+    transform: translateY(-8%) scale(1.02);   /* Reduced from 1.06 */
+  }
+  75% {
+    transform: translateY(-12%) scale(1.03);  /* Reduced from 1.07 */
+  }
+  100% {
+    transform: translateY(-12%) scale(1.04);
+  }
+}
+
+/* WIDE IMAGE ANIMATIONS - Reduced zoom */
+@keyframes kenBurnsWideRight {
+  0% {
+    transform: translateX(0) scale(1.01);     /* Reduced from 1.05 */
+  }
+  80% {
+    transform: translateX(-15%) scale(1.02);  /* Reduced from 1.08 */
+  }
+  100% {
+    transform: translateX(-15%) scale(1.04);
+  }
+}
+
+@keyframes kenBurnsWideLeft {
+  0% {
+    transform: translateX(-15%) scale(1.01);  /* Reduced from 1.05 */
+  }
+  80% {
+    transform: translateX(0) scale(1.02);     /* Reduced from 1.08 */
+  }
+  100% {
+    transform: translateX(0) scale(1.04);
+  }
+}
+
+/* SQUARE IMAGE ANIMATIONS - Reduced zoom */
+@keyframes kenBurnsSquareZoom {
+  0% {
+    transform: scale(1);                      /* No change */
+  }
+  50% {
+    transform: scale(1.01);                   /* Reduced from 1.05 */
+  }
+  100% {
+    transform: scale(1.02);                   /* Reduced from 1.08 */
+  }
+}
+
+/* Soft bottom fade */
+.hero-carousel::after{
+  content: ""; 
+  position: absolute; 
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,.35) 100%);
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Disable animations on reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide img {
+    animation: none !important;
+    transform: none !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-carousel {
+    height: 50vh;
+    max-height: 500px;
+    margin: 2rem auto;
+    max-width: 90%;
+  }
+  
+  .hero-slide.active img {
+    animation-duration: 6s !important;
+  }
+}
+
+/* =============================
+   A11y helpers
+============================= */
+.sr-only{
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* =============================
+   Responsive
+============================= */
+@media (max-width: 900px){
+  .bio-section{ grid-template-columns: 1fr; text-align: left; }
+  .modal-content{ grid-template-columns: 1fr; max-height: 82vh; overflow-y: auto; }
+  .modal-image{ height: 320px; }
+  .nav-links{ gap: 1.25rem; }
+}

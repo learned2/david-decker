@@ -1,0 +1,346 @@
+[
+  {
+    "title": "Memory Fragment I",
+    "image": "data/photos/photo1.png",
+    "medium": "Mixed Media on Canvas",
+    "year": "2015",
+    "story": "This piece explores the fragmented nature of memory, using layered textures and abstract forms to represent how we reconstruct our past experiences.",
+    "tags": ["memory-series", "painting"]
+  },
+  {
+    "title": "Pomergranate Lovers",
+    "image": "data/photos/photo2.png",
+    "medium": "Digital Collage",
+    "year": "2016",
+    "story": "An exploration of how technology shapes our perception of reality, blending traditional and digital mediums.",
+    "tags": ["digital", "memory-series"]
+  },
+  {
+    "title": "Urban Landscape",
+    "image": "data/photos/photo3.png",
+    "medium": "Oil on Canvas",
+    "year": "1998",
+    "story": "One of David's earlier works, showcasing his mastery of traditional painting techniques.",
+    "tags": ["early-works", "painting"]
+  },
+  {
+    "title": "What is there to say?",
+    "image": "data/photos/photo5.png",
+    "medium": "Bronze and Steel",
+    "year": "1968",
+    "story": "A three-dimensional exploration of space and form, representing the artist's venture into sculpture.",
+    "tags": ["sculpture"]
+  },
+  {
+    "title": "Abstract Composition",
+    "image": "data/photos/photo6.png",
+    "medium": "Acrylic on Canvas",
+    "year": "2012",
+    "story": "Bold colors and dynamic forms showcase David's mature style and confident brushwork.",
+    "tags": ["painting"]
+  },
+  {
+    "title": "Unknown 1",
+    "image": "data/photos/photo7.png",
+    "medium": "Paint on plywood cut-outs",
+    "year": "Unknown",
+    "story": "Bold colors and dynamic forms showcase David's mature style and confident brushwork.",
+    "tags": ["wood", "jazz"]
+  },
+  {
+    "title": "Unknown 2",
+    "image": "data/photos/photo8.png",
+    "medium": "Acrylic on Canvas",
+    "year": "2012",
+    "story": "Bold colors and dynamic forms showcase David's mature style and confident brushwork.",
+    "tags": ["painting"]
+  },
+  {
+    "title": "Unknown 3",
+    "image": "data/photos/photo9.png",
+    "medium": "Acrylic on Canvas",
+    "year": "2012",
+    "story": "Bold colors and dynamic forms showcase David's mature style and confident brushwork.",
+    "tags": ["painting"]
+  },
+  {
+    "title": "Unknown 4",
+    "image": "data/photos/photo10.png",
+    "medium": "Paint on plywood cut-outs",
+    "year": "Unknown",
+    "story": "Bold colors and dynamic forms showcase David's mature style and confident brushwork.",
+    "tags": ["wood", "lit"]
+  }, 
+  {
+    "title": "Unknown 5",
+    "image": "data/photos/photo11.png",
+    "medium": "Paint on plywood cut-outs",
+    "year": "Unknown",
+    "story": "Bold colors and dynamic forms showcase David's mature style and confident brushwork.",
+    "tags": ["lit"]
+  },
+  {
+    "title": "Unknown 6",
+    "image": "data/photos/photo12.png",
+    "medium": "Paint on plywood cut-outs",
+    "year": "Unknown",
+    "story": "Bold colors and dynamic forms showcase David's mature style and confident brushwork.",
+    "tags": ["lit"]
+  },
+   {
+    "title": "Tubs - Tenors - Tunes",
+    "image": "data/photos/photo13.png",
+    "medium": "Graphite on paper",
+    "year": "Unknown",
+    "story": "A surreal pencil drawing that blends dreamlike imagery with grotesque forms.",
+    "tags": ["ink", "lit"]
+  },
+  {
+    "title": "Unknown 8",
+    "image": "data/photos/photo14.png",
+    "medium": "Etching on paper",
+    "year": "Unknown",
+    "story": "A theatrical figure rendered with dramatic shading, holding a symbolic object.",
+    "tags": ["etch", "lit"]
+  },
+  {
+    "title": "Unknown 9",
+    "image": "data/photos/photo15.png",
+    "medium": "Pen and ink on paper",
+    "year": "Unknown",
+    "story": "A nocturnal scene where dogs and human figures emerge from stark black surroundings.",
+    "tags": ["ink", "lit"]
+  },
+  {
+    "title": "Orange",
+    "image": "data/photos/photo16.png",
+    "medium": "Paint on plywood cut-out",
+    "year": "Unknown",
+    "story": "A vibrant painted wood relief depicting two swimmers in close embrace.",
+    "tags": ["wood", "lit"]
+  },
+  {
+    "title": "Unknown 11",
+    "image": "data/photos/photo17.png",
+    "medium": "Etching on paper",
+    "year": "Unknown",
+    "story": "A portrait of a saxophonist in deep concentration, captured with intricate linework.",
+    "tags": ["etch", "jazz"]
+  },
+  {
+    "title": "The Shootist",
+    "image": "data/photos/photo18.png",
+    "medium": "Graphite on paper",
+    "year": "Unknown",
+    "story": "A cowboy with revolvers rendered in bold pencil lines, evoking classic Western imagery.",
+    "tags": ["ink", "lit"]
+  },
+  {
+    "title": "Unknown 13",
+    "image": "data/photos/photo19.png",
+    "medium": "Etching on paper",
+    "year": "Unknown",
+    "story": "A musician in formal attire holding a trumpet, etched with fine cross-hatching detail.",
+    "tags": ["etch", "jazz"]
+  },
+    {
+    "title": "Unknown 14",
+    "image": "data/photos/photo20.png",
+    "medium": "Paint",
+    "year": "Unknown",
+    "story": "Three women rendered in bold, colorful painting blending humor and warmth.",
+    "tags": ["lit"]
+  },
+  {
+    "title": "Unknown 15",
+    "image": "data/photos/photo21.png",
+    "medium": "Paint on plywood cut-out",
+    "year": "Unknown",
+    "story": "A lively party scene with dancers and musicians, depicted in layered wooden forms.",
+    "tags": ["wood", "lit", "jazz"]
+  },
+  {
+    "title": "Unknown 16",
+    "image": "data/photos/photo22.png",
+    "medium": "Etching on paper",
+    "year": "Unknown",
+    "story": "A stark portrait of a man gazing upward, etched with dense texture and shading.",
+    "tags": ["etch", "lit"]
+  },
+  {
+    "title": "Unknown 17",
+    "image": "data/photos/photo23.png",
+    "medium": "Pen and ink on paper",
+    "year": "Unknown",
+    "story": "Two sharply dressed men with a dog and a jazz band in the background, rich with atmosphere.",
+    "tags": ["ink", "jazz", "lit"]
+  },
+  {
+    "title": "Unknown 18",
+    "image": "data/photos/photo24.png",
+    "medium": "Etching on paper",
+    "year": "Unknown",
+    "story": "Expressive close-up portrait of a figure in a tall hat, defined by etched lines and tone.",
+    "tags": ["etch", "lit"]
+  },
+  {
+    "title": "Unknown 19",
+    "image": "data/photos/photo25.png",
+    "medium": "Paint on plywood cut-outs",
+    "year": "Unknown",
+    "story": "Playful wooden reliefs of nude female figures, stylized with humor and bold colors.",
+    "tags": ["wood", "lit"]
+  },
+  {
+    "title": "Unknown 20",
+    "image": "data/photos/photo26.png",
+    "medium": "Pen and ink on paper",
+    "year": "Unknown",
+    "story": "A jazz pianist in concentrated profile, drawn with stippling and cross-hatched detail.",
+    "tags": ["ink", "jazz"]
+  },
+  {
+    "title": "Unknown 21",
+    "image": "data/photos/photo27.png",
+    "medium": "Pen and ink on paper",
+    "year": "Unknown",
+    "story": "A vibrant jazz scene with musicians in mid-performance, etched with lively strokes.",
+    "tags": ["ink", "jazz"]
+  },
+  {
+    "title": "Unknown 22",
+    "image": "data/photos/photo28.png",
+    "medium": "Paint on plywood cut-out",
+    "year": "Unknown",
+    "story": "Tall, elegant wood relief of a woman in a black dress, accented with a white flower.",
+    "tags": ["wood", "lit"]
+  },
+    {
+    "title": "Unknown 23",
+    "image": "data/photos/photo29.png",
+    "medium": "Paint on plywood cut-out",
+    "year": "Unknown",
+    "story": "A lively dinner party scene with elegantly dressed figures gathered around a table.",
+    "tags": ["wood", "lit"]
+  },
+  {
+    "title": "Unknown 24",
+    "image": "data/photos/photo30.png",
+    "medium": "Paint on plywood cut-out",
+    "year": "Unknown",
+    "story": "A reclining nude figure blends seamlessly with a mountainous landscape under a yellow sky.",
+    "tags": ["wood", "lit"]
+  },
+  {
+    "title": "Unknown 25",
+    "image": "data/photos/photo31.png",
+    "medium": "Etching on paper",
+    "year": "Unknown",
+    "story": "A red-toned intaglio print juxtaposing reclining figures with abstract circular forms.",
+    "tags": ["etch", "lit"]
+  },
+  {
+    "title": "Unknown 27",
+    "image": "data/photos/photo33.png",
+    "medium": "Etching on paper",
+    "year": "Unknown",
+    "story": "A bold portrait of a woman mid-speech, defined by sharp contrasts and expressive lines.",
+    "tags": ["etch", "lit"]
+  },
+  {
+    "title": "Unknown 28",
+    "image": "data/photos/photo34.png",
+    "medium": "Graphite on paper",
+    "year": "Unknown",
+    "story": "A surreal bathroom scene where a figure plays saxophone in a tub surrounded by objects.",
+    "tags": ["ink", "jazz", "lit"]
+  },
+  {
+    "title": "Unknown 29",
+    "image": "data/photos/photo35.png",
+    "medium": "Etching on paper",
+    "year": "Unknown",
+    "story": "Three men in a kitchen — chefs and a soldier — rendered with textured etching lines.",
+    "tags": ["etch", "lit"]
+  },
+  {
+    "title": "Unknown 30",
+    "image": "data/photos/photo36.png",
+    "medium": "Etching on paper",
+    "year": "Unknown",
+    "story": "A portrait of a man with glasses and pipe, composed within a circular frame.",
+    "tags": ["etch", "lit"]
+  },
+  {
+    "title": "Unknown 31",
+    "image": "data/photos/photo37.png",
+    "medium": "Pen and ink on paper",
+    "year": "Unknown",
+    "story": "A pastoral scene of a shepherd with sheep, gazing across a vast patterned landscape.",
+    "tags": ["ink", "lit"]
+  }, 
+    {
+    "title": "Unknown 32",
+    "image": "data/photos/photo38.png",
+    "medium": "Mixed media on paper",
+    "year": "Unknown",
+    "story": "Expressive figure on a bicycle, rendered with strong use of color and gesture.",
+    "tags": ["ink"]
+  },
+  {
+    "title": "Mumgan's Bath",
+    "image": "data/photos/photo39.png",
+    "medium": "Intaglio print on paper",
+    "year": "1981",
+    "story": "Surreal imagery of faces and forms emerging from water.",
+    "tags": ["etch", "lit"]
+  },
+  {
+    "title": "Saint Sebastian",
+    "image": "data/photos/photo40.png",
+    "medium": "Intaglio print on paper",
+    "year": "Unknown",
+    "story": "An abstract, red-toned composition of fragmented forms.",
+    "tags": ["etch", "lit"]
+  },
+  {
+    "title": "Major Parts",
+    "image": "data/photos/photo41.png",
+    "medium": "Intaglio print on paper",
+    "year": "Unknown",
+    "story": "Annotated surreal portrait with humorous and absurd text elements.",
+    "tags": ["etch", "lit"]
+  },
+  {
+    "title": "Unknown 36",
+    "image": "data/photos/photo42.png",
+    "medium": "Intaglio print on paper with hand-coloring",
+    "year": "Unknown",
+    "story": "Two figures locked in a raw, emotional embrace, accented with color.",
+    "tags": ["etch"]
+  },
+  {
+    "title": "Vico's Dreams",
+    "image": "data/photos/photo43.png",
+    "medium": "Intaglio print on paper",
+    "year": "1977",
+    "story": "Portrait of two figures, rendered with strong cross-hatching and dramatic hand gestures.",
+    "tags": ["etch"]
+  },
+  {
+    "title": "Unknown 38",
+    "image": "data/photos/photo44.png",
+    "medium": "Intaglio print on paper with hand-coloring",
+    "year": "Unknown",
+    "story": "A contemplative figure in swimwear set against a sparse seascape.",
+    "tags": ["etch"]
+  },
+  {
+    "title": "Unknown 39",
+    "image": "data/photos/photo45.png",
+    "medium": "Intaglio print on paper",
+    "year": "Unknown",
+    "story": "Playful and surreal picnic-like gathering under a tree, featuring musicians and champagne.",
+    "tags": ["etch", "jazz"]
+  }
+]
