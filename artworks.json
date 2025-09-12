@@ -3,7 +3,7 @@
     "title": "Memory Fragment I",
     "image": "data/photos/photo1.png",
     "medium": "Mixed Media on Canvas",
-    "year": "2015",
+    "year": "Unknown",
     "story": "This piece explores the fragmented nature of memory, using layered textures and abstract forms to represent how we reconstruct our past experiences.",
     "tags": ["memory-series", "painting"]
   },
@@ -11,15 +11,15 @@
     "title": "Pomergranate Lovers",
     "image": "data/photos/photo2.png",
     "medium": "Digital Collage",
-    "year": "2016",
+    "year": "Unknown",
     "story": "An exploration of how technology shapes our perception of reality, blending traditional and digital mediums.",
     "tags": ["digital", "memory-series"]
   },
   {
-    "title": "Urban Landscape",
+    "title": "Untitled",
     "image": "data/photos/photo3.png",
     "medium": "Oil on Canvas",
-    "year": "1998",
+    "year": "Unknown",
     "story": "One of David's earlier works, showcasing his mastery of traditional painting techniques.",
     "tags": ["early-works", "painting"]
   },
@@ -35,7 +35,7 @@
     "title": "Abstract Composition",
     "image": "data/photos/photo6.png",
     "medium": "Acrylic on Canvas",
-    "year": "2012",
+    "year": "Unknown",
     "story": "Bold colors and dynamic forms showcase David's mature style and confident brushwork.",
     "tags": ["painting"]
   },
@@ -51,7 +51,7 @@
     "title": "Unknown 2",
     "image": "data/photos/photo8.png",
     "medium": "Acrylic on Canvas",
-    "year": "2012",
+    "year": "Unknown",
     "story": "Bold colors and dynamic forms showcase David's mature style and confident brushwork.",
     "tags": ["painting"]
   },
@@ -59,7 +59,7 @@
     "title": "Unknown 3",
     "image": "data/photos/photo9.png",
     "medium": "Acrylic on Canvas",
-    "year": "2012",
+    "year": "Unknown",
     "story": "Bold colors and dynamic forms showcase David's mature style and confident brushwork.",
     "tags": ["painting"]
   },
