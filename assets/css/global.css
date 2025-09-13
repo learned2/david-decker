@@ -2,7 +2,10 @@
    Reset & base
 ============================= */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html, body { height: 100%; }
+html, body {
+  font-size: 16px; /* Set explicit base font size */
+  -webkit-text-size-adjust: 100%; /* Prevent iOS font scaling */
+}
 
 /* =============================
    Fonts (uploaded)
