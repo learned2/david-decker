@@ -7,7 +7,7 @@ Created by: Stan Usovicz [github.com/learned2] in September 2025.
 
 ### Step 1: Add Photos
 
-1. Save your artwork images as PNG files
+1. Save your artwork images as PNG files (please use 1200x1600 pixle images for wide pieces and 1600x1200 for tall pieces for consistency)
 2. Name them using the format: `photo46.png`, `photo47.png`, etc. (continue numbering from 45)
 3. Place the files in the `data/photos/` folder
 
