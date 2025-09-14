@@ -692,3 +692,15 @@ body {
   .modal-image{ height: 320px; }
   .nav-links{ gap: 1.25rem; }
 }
+
+/* Keep the play button on a single line and tighten nav on phones */
+@media (max-width: 540px){
+  .nav-links{ flex-wrap: wrap; column-gap: 1rem; row-gap: .35rem; } /* allow 2 tidy rows */
+  .nav-links a{ font-size: .9rem; letter-spacing: .09em; }         /* slightly smaller */
+  .music-toggle{ 
+    white-space: nowrap; 
+    display: inline-flex; 
+    align-items: center; 
+    gap: .35rem; 
+  }
+}
