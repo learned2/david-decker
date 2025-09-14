@@ -83,11 +83,77 @@
             David was a lover of opera and chamber music. His love and knowledge of jazz led him to produce "Salt Peanuts", a weekly program for Maine Public Radio.
           </p>
           <p class="bio-text">
-            David’s work has been reproduced in The New York Times, The Saturday Review of Literature, The Milwaukee Journal, Milwaukee Sentinel, The Boston Globe, The Boston Phoenix, and Art New England. His work has also appeared in exhibition catalogues from The Seattle Art Museum, Albion College Museum, Olivet College Museum, The Brooklyn Museum, The DeCordova Museum, the Boston Printmakers Exhibit, and The IBM Gallery, New York.
+            David's work has been reproduced in The New York Times, The Saturday Review of Literature, The Milwaukee Journal, Milwaukee Sentinel, The Boston Globe, The Boston Phoenix, and Art New England. His work has also appeared in exhibition catalogues from The Seattle Art Museum, Albion College Museum, Olivet College Museum, The Brooklyn Museum, The DeCordova Museum, the Boston Printmakers Exhibit, and The IBM Gallery, New York.
           </p>
         </div>
       </div>
-    </section>
+
+
+      <div class="reflections-section">
+        <h3 class="reflections-heading">Reflections on David's Work</h3>
+        
+        <div class="reflections-card">
+          <!-- Toggle Controls -->
+          <div class="reflections-nav">
+            <button class="reflection-arrow prev-arrow" id="prev-reflection" aria-label="Previous reflection">
+              &#8249;
+            </button>
+            <div class="reflection-indicators">
+              <span class="indicator active" data-reflection="0"></span>
+              <span class="indicator" data-reflection="1"></span>
+            </div>
+            <button class="reflection-arrow next-arrow" id="next-reflection" aria-label="Next reflection">
+              &#8250;
+            </button>
+          </div>
+
+          <!-- Reflections Container -->
+          <div class="reflections-container" id="reflections-container">
+            <!-- Reflection 1 -->
+            <div class="reflection-item active" data-reflection="0">
+              <div class="reflection-layout">
+                <div class="reflection-photo-section">
+                  <img src="data/reflections/reflection1.jpg" alt="Reflection photo 1" class="reflection-photo" loading="lazy" />
+                  <p class="photo-caption">Caption for the first reflection photo goes here.</p>
+                </div>
+                <div class="reflection-content">
+                  <h4 class="reflection-title">First Reflection Title</h4>
+                  <div class="reflection-text">
+                    <p>This is where the first reflection content would go. This area can accommodate longer texts and will scroll if needed. You can include multiple paragraphs here to share memories, thoughts, or stories about David.</p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reflection 2 -->
+            <div class="reflection-item" data-reflection="1">
+              <div class="reflection-layout">
+                <div class="reflection-photo-section">
+                  <img src="data/reflections/reflection2.jpg" alt="Reflection photo 2" class="reflection-photo" loading="lazy" />
+                  <p class="photo-caption">Caption for the second reflection photo goes here.</p>
+                </div>
+                <div class="reflection-content">
+                  <h4 class="reflection-title">Second Reflection Title</h4>
+                  <div class="reflection-text">
+                    <p>This is where the second reflection content would go. This demonstrates how the component handles different lengths of content and maintains consistent styling.</p>
+                    
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                    
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- This closes the biography section -->
 
     <section id="gallery" class="section" aria-labelledby="gallery-heading">
       <h2 id="gallery-heading" class="sr-only">Gallery</h2>
@@ -99,6 +165,49 @@
         <button class="filter-btn" data-filter="etch" role="tab" aria-selected="false">Intaglio</button>
         <button class="filter-btn" data-filter="jazz" role="tab" aria-selected="false">Jazz</button>
         <button class="filter-btn" data-filter="lit" role="tab" aria-selected="false">Literature</button>
+      </div>
+
+      <div class="themes-section">
+        <div class="themes-card">
+          <!-- Toggle Controls -->
+          <div class="themes-nav">
+            <button class="theme-arrow prev-arrow" id="prev-theme" aria-label="Previous theme">
+              &#8249;
+            </button>
+            <div class="theme-indicators">
+              <span class="theme-indicator active" data-theme="0"></span>
+              <span class="theme-indicator" data-theme="1"></span>
+            </div>
+            <button class="theme-arrow next-arrow" id="next-theme" aria-label="Next theme">
+              &#8250;
+            </button>
+          </div>
+
+          <!-- Themes Container -->
+          <div class="themes-container" id="themes-container">
+            <!-- Jazz Theme -->
+            <div class="theme-item active" data-theme="0">
+              <div class="theme-content-only">
+                <h4 class="theme-title">Jazz</h4>
+                <div class="theme-text">
+                  <p>David's deep love and knowledge of jazz permeated his artistic work in profound ways...</p>
+                  <!-- Add your Jazz content here -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Literature Theme -->
+            <div class="theme-item" data-theme="1">
+              <div class="theme-content-only">
+                <h4 class="theme-title">Literature</h4>
+                <div class="theme-text">
+                  <p>Literature served as another major wellspring of inspiration...</p>
+                  <!-- Add your Literature content here -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="gallery-grid" id="gallery-grid" aria-live="polite"></div>
@@ -126,6 +235,12 @@
     </div>
   </div>
 
+  <div class="credit-bubble">
+    <a href="https://github.com/learned2" target="_blank" rel="noopener noreferrer" class="credit-link">
+      made by SJU
+    </a>
+  </div>
+
   <noscript>
     This site works best with JavaScript enabled. A text-only version can be provided upon request.
   </noscript>
@@ -134,6 +249,8 @@
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/bg-tiles.js" defer></script>
   <script src="assets/js/hero-carousel.js" defer></script>
+  <script src="assets/js/reflections.js" defer></script>
+  <script src="assets/js/themes.js" defer></script>
 
 </body>
 </html>
