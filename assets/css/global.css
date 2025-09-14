@@ -272,31 +272,31 @@ html{ background: var(--bg-deep); }
 }
 
 .text-size-large .bio-text {
-  font-size: 1.22rem !important; /* was 1.06rem */
+  font-size: 1.5rem !important; /* was 1.06rem */
   line-height: 1.8;
 }
 
 .text-size-large .reflection-text p {
-  font-size: 1.21rem !important; /* was 1.05rem */
+  font-size: 1.5rem !important; /* was 1.05rem */
   line-height: 1.8;
 }
 
 .text-size-large .theme-text p {
-  font-size: 1.27rem !important; /* was 1.1rem */
+  font-size: 1.4rem !important; /* was 1.1rem */
   line-height: 1.8;
 }
 
 .text-size-large .artwork-details {
-  font-size: 1.09rem !important; /* was 0.95rem */
+  font-size: 1.4rem !important; /* was 0.95rem */
 }
 
 .text-size-large .modal-story {
-  font-size: 1.27rem !important; /* was 1.1rem */
+  font-size: 1.4rem !important; /* was 1.1rem */
   line-height: 1.8;
 }
 
 .text-size-large .modal-details {
-  font-size: 1.49rem !important; /* was 1.3rem */
+  font-size: 1.8rem !important; /* was 1.3rem */
 }
 
 /* Keep headings proportional but not too large */
@@ -305,31 +305,31 @@ html{ background: var(--bg-deep); }
 }
 
 .text-size-large .reflection-title {
-  font-size: 1.5rem !important; /* was 1.4rem */
+  font-size: 1.9rem !important; /* was 1.4rem */
 }
 
 .text-size-large .theme-title {
-  font-size: 1.9rem !important; /* was 1.8rem */
+  font-size: 2.3rem !important; /* was 1.8rem */
 }
 
 /* Photo captions */
 .text-size-large .photo-caption {
-  font-size: 0.98rem !important; /* was 0.85rem */
+  font-size: 1.2rem !important; /* was 0.85rem */
   line-height: 1.5;
 }
 
 /* Mobile adjustments for large text */
 @media (max-width: 768px) {
   .text-size-large .reflection-text p {
-    font-size: 1.15rem !important;
+    font-size: 1.3rem !important;
   }
   
   .text-size-large .theme-text p {
-    font-size: 1.15rem !important;
+    font-size: 1.3rem !important;
   }
   
   .text-size-large .bio-text {
-    font-size: 1.15rem !important;
+    font-size: 1.3rem !important;
   }
 }
 
