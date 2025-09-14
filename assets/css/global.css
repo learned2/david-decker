@@ -177,6 +177,162 @@ html{ background: var(--bg-deep); }
   padding: 0;
 }
 
+/* =============================
+   Text Size Bubble (top-right corner)
+============================= */
+.text-size-bubble {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 1000;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.text-size-bubble:hover {
+  opacity: 1;
+}
+
+.text-size-link {
+  display: block;
+  padding: 10px 14px;
+  background: rgba(23, 23, 28, 0.25);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(233, 228, 216, 0.12);
+  border-radius: 20px;
+  color: rgba(233, 228, 216, 0.7);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  font-family: 'Elegant Typewriter', Georgia, serif;
+  box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  min-width: 44px;
+  text-align: center;
+}
+
+.text-size-link:hover {
+  color: var(--paper);
+  border-color: rgba(233, 228, 216, 0.2);
+  transform: translateY(-1px);
+  box-shadow: 
+    0 6px 20px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.text-size-link:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .text-size-bubble {
+    top: 16px;
+    right: 16px;
+  }
+  
+  .text-size-link {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-size-bubble {
+    top: 12px;
+    right: 12px;
+    opacity: 0.5;
+  }
+  
+  .text-size-link {
+    padding: 7px 10px;
+    font-size: 0.75rem;
+    border-radius: 16px;
+  }
+}
+
+/* Ensure it doesn't interfere with modals */
+.modal.active ~ .text-size-bubble {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Text size classes */
+.text-size-normal {
+  /* Default sizes - no changes needed */
+}
+
+.text-size-large {
+  /* Increase text sizes by ~15% */
+}
+
+.text-size-large .bio-text {
+  font-size: 1.22rem !important; /* was 1.06rem */
+  line-height: 1.8;
+}
+
+.text-size-large .reflection-text p {
+  font-size: 1.21rem !important; /* was 1.05rem */
+  line-height: 1.8;
+}
+
+.text-size-large .theme-text p {
+  font-size: 1.27rem !important; /* was 1.1rem */
+  line-height: 1.8;
+}
+
+.text-size-large .artwork-details {
+  font-size: 1.09rem !important; /* was 0.95rem */
+}
+
+.text-size-large .modal-story {
+  font-size: 1.27rem !important; /* was 1.1rem */
+  line-height: 1.8;
+}
+
+.text-size-large .modal-details {
+  font-size: 1.49rem !important; /* was 1.3rem */
+}
+
+/* Keep headings proportional but not too large */
+.text-size-large .bio-content h2 {
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem) !important;
+}
+
+.text-size-large .reflection-title {
+  font-size: 1.5rem !important; /* was 1.4rem */
+}
+
+.text-size-large .theme-title {
+  font-size: 1.9rem !important; /* was 1.8rem */
+}
+
+/* Photo captions */
+.text-size-large .photo-caption {
+  font-size: 0.98rem !important; /* was 0.85rem */
+  line-height: 1.5;
+}
+
+/* Mobile adjustments for large text */
+@media (max-width: 768px) {
+  .text-size-large .reflection-text p {
+    font-size: 1.15rem !important;
+  }
+  
+  .text-size-large .theme-text p {
+    font-size: 1.15rem !important;
+  }
+  
+  .text-size-large .bio-text {
+    font-size: 1.15rem !important;
+  }
+}
+
 /* Sections */
 .section{ padding: 4.5rem 0; display: none; }
 .section.active{ display: block; }
@@ -707,7 +863,8 @@ body {
   box-shadow: 
     0 8px 32px rgba(0, 0, 0, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  overflow: hidden;
+  overflow: visible; 
+  min-height: 600px; 
 }
 
 /* Navigation Controls */
@@ -773,9 +930,8 @@ body {
 /* Reflections Container */
 .reflections-container {
   position: relative;
-  min-height: 400px;
-  max-height: none; /* Remove any max-height constraint */
-  overflow: visible; /* Change from hidden to visible */
+  min-height: 550px;
+  overflow: hidden; 
 }
 
 .reflection-item {
@@ -853,15 +1009,14 @@ body {
 }
 
 .reflection-text {
-  height: auto;
-  max-height: 500px;
-  overflow-y: auto;
+  max-height: 400px; 
+  overflow-y: auto; 
   overflow-x: hidden;
-  padding-right: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
   scroll-behavior: smooth;
   display: block;
   position: relative;
-  min-height: 0; 
 }
 
 .reflection-text p {
