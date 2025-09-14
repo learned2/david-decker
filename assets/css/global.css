@@ -3,7 +3,7 @@
 ============================= */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html, body {
-  font-size: 16px; /* Set explicit base font size */
+  font-size: 18px; /* Set explicit base font size */
   -webkit-text-size-adjust: 100%; /* Prevent iOS font scaling */
 }
 
@@ -86,11 +86,11 @@ html{ background: var(--bg-deep); }
   border-bottom: 1px solid var(--rule);
 }
 .artist-name{
-  font-size: clamp(2.4rem, 4.2vw, 3.4rem);
+  font-size: clamp(2.8rem, 4.6vw, 3.8rem);
   font-weight: 700; letter-spacing: .08em; text-transform: uppercase; line-height: 1.15;
 }
 .artist-subtitle{
-  font-size: 1rem; letter-spacing: .16em; opacity: .85; margin-top: .6rem; text-transform: uppercase;
+  font-size: 1.2rem; letter-spacing: .16em; opacity: .85; margin-top: .6rem; text-transform: uppercase;
 }
 
 /* Nav */
@@ -111,7 +111,7 @@ html{ background: var(--bg-deep); }
 .nav-links a{
   text-decoration: none; color: var(--ink);
   font-weight: 400; letter-spacing: .12em; text-transform: uppercase;
-  position: relative; padding-bottom: 6px; transition: color .2s ease;
+  position: relative; padding-bottom: 6px; transition: color .2s ease; font-size: 1.1rem;
 }
 .nav-links a::after{
   content:""; position: absolute; left: 0; right: 0; bottom: 0;
@@ -271,6 +271,11 @@ html{ background: var(--bg-deep); }
   /* Increase text sizes by ~15% */
 }
 
+.text-size-large .header-text {
+  font-size: 1.5rem !important; /* was 1.06rem */
+  line-height: 1.8;
+}
+
 .text-size-large .bio-text {
   font-size: 1.5rem !important; /* was 1.06rem */
   line-height: 1.8;
@@ -350,11 +355,11 @@ html{ background: var(--bg-deep); }
   width: 100%; border-radius: 8px; box-shadow: var(--shadow); border: 1px solid var(--rule);
 }
 .bio-content h2{
-  font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+  font-size: clamp(2.1rem, 3.6vw, 2.8rem);
   margin-bottom: 1rem; color: var(--paper); text-transform: uppercase; letter-spacing: .1em;
 }
 .bio-text{
-  font-size: 1.06rem; margin-bottom: 1.2rem; text-align: justify; color: var(--ink); opacity: .92;
+  font-size: 1.3rem; margin-bottom: 1.2rem; text-align: justify; color: var(--ink); opacity: .92;
 }
 
 /* Filters */
