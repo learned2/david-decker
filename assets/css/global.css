@@ -670,11 +670,11 @@ body {
 /* === Hero carousel with Adaptive Ken Burns effect === */
 .hero-carousel{
   position: relative;
-  height: 250vh;
+  height: 200vh;
   max-height: 1000px;
   min-height: 650px;
   margin: 2rem auto;
-  max-width: 90%;
+  max-width: 85%;
   overflow: hidden;
   z-index: 4;
   border-radius: 8px;
