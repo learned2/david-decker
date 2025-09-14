@@ -1,0 +1,85 @@
+# ===========================================
+# David Decker Tribute Site - .gitignore
+# ===========================================
+
+# Protected Images & Media
+# -------------------------
+# Keep high-resolution originals private
+data/photos/
+data/artworks/high-res/
+data/reflections/
+data/themes/
+data/key_images/
+data/hero_images/
+
+# Audio files (can be large and copyrighted)
+data/music/*.mp3
+data/music/*.wav
+data/music/*.flac
+
+# Personal/Private Content
+# ------------------------
+# Any personal notes or drafts
+notes/
+drafts/
+personal/
+private/
+
+# Backup files
+*.backup
+*.bak
+*.tmp
+
+# Development Files
+# -----------------
+# Local development server files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node.js (if you add build tools later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs (if you add a build process)
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Log files
+*.log
+logs/
+
+# Cache directories
+.cache/
+.parcel-cache/
+
+# Temporary files
+temp/
+tmp/
+
+# ===========================================
+# Keep these files (examples of what TO track)
+# ===========================================
+# !data/photos/compressed/
+# !data/artworks/thumbnails/
+# !assets/
+# !*.html
+# !*.css
+# !*.js
+# !README.md
