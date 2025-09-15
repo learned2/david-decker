@@ -7,7 +7,6 @@
 # Keep high-resolution originals private
 data/photos/
 data/artworks/high-res/
-data/reflections/
 data/themes/
 data/key_images/
 data/hero_images/
