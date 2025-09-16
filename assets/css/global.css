@@ -268,15 +268,6 @@ html{ background: var(--bg-deep); }
   pointer-events: none;
 }
 
-/* Text size classes */
-.text-size-normal {
-  /* Default sizes - no changes needed */
-}
-
-.text-size-large {
-  /* Increase text sizes by ~15% */
-}
-
 .text-size-large .header-text {
   font-size: 1.5rem !important; /* was 1.06rem */
   line-height: 1.8;
