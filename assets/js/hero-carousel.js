@@ -6,7 +6,7 @@
   // Load list
   let photos = [];
   try {
-    const res = await fetch('photos.json', { cache: 'no-store' });
+    const res = await fetch('/photos.json', { cache: 'no-store' });
     photos = await res.json();
   } catch (e) {
     console.warn('Could not load photos.json', e);
