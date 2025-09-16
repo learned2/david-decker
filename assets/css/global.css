@@ -257,8 +257,14 @@ html{ background: var(--bg-deep); }
 }
 
 /* Ensure it doesn't interfere with modals */
+.modal {
+  z-index: 999999 !important;
+  position: fixed !important;
+}
+
 .modal.active ~ .text-size-bubble {
   opacity: 0.3;
+  z-index: 999999 !important;
   pointer-events: none;
 }
 
@@ -838,7 +844,7 @@ body {
 }
 
 /* =============================
-   Reflections Section
+   Reflections Section - CLEANED VERSION
 ============================= */
 .reflections-section {
   margin-top: 4rem;
@@ -879,6 +885,8 @@ body {
   align-items: center;
   margin-bottom: 2rem;
   padding: 0 1rem;
+  position: relative;
+  z-index: 10;
 }
 
 .reflection-arrow {
@@ -897,6 +905,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .reflection-arrow:hover {
@@ -914,6 +923,7 @@ body {
 .reflection-indicators {
   display: flex;
   gap: 0.75rem;
+  flex-shrink: 0;
 }
 
 .indicator {
@@ -924,6 +934,7 @@ body {
   border: 1px solid rgba(233, 228, 216, 0.2);
   cursor: pointer;
   transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .indicator.active {
@@ -935,8 +946,9 @@ body {
 /* Reflections Container */
 .reflections-container {
   position: relative;
-  min-height: 550px;
-  overflow: hidden; 
+  min-height: 600px;
+  height: auto;
+  overflow: visible;
 }
 
 .reflection-item {
@@ -948,35 +960,41 @@ body {
   transform: translateX(100%);
   transition: all 0.5s ease;
   pointer-events: none;
+  height: auto;
+  min-height: 600px;
 }
 
 .reflection-item.active {
   opacity: 1;
   transform: translateX(0);
   pointer-events: all;
+  position: static;
+  height: auto;
 }
 
 .reflection-item.prev {
   transform: translateX(-100%);
+  position: absolute;
 }
 
 /* Reflection Layout */
 .reflection-layout {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 280px 1fr;
   gap: 2rem;
   align-items: start;
+  min-height: 500px;
 }
 
-/* Photo Section */
 .reflection-photo-section {
   position: sticky;
   top: 1rem;
+  height: fit-content;
 }
 
 .reflection-photo {
   width: 100%;
-  height: 250px;
+  height: 220px;
   object-fit: cover;
   border-radius: 12px;
   border: 1px solid var(--rule);
@@ -995,11 +1013,10 @@ body {
 /* Content Section */
 .reflection-content {
   padding-right: 1rem;
-  overflow: visible;
-  position: relative;
+  height: auto;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
-  min-height: 0;
 }
 
 .reflection-title {
@@ -1011,17 +1028,16 @@ body {
   margin-bottom: 1.5rem;
   border-bottom: 2px solid var(--accent);
   padding-bottom: 0.5rem;
+  flex-shrink: 0;
 }
 
 .reflection-text {
-  max-height: 400px; 
-  overflow-y: auto; 
-  overflow-x: hidden;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 1.5rem;
+  padding-left: 0.5rem;
   scroll-behavior: smooth;
-  display: block;
-  position: relative;
+  max-height: none;
 }
 
 .reflection-text p {
@@ -1036,26 +1052,31 @@ body {
   margin-bottom: 0;
 }
 
-/* Custom scrollbar for reflection text */
+/* Custom scrollbar */
 .reflection-text::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 
 .reflection-text::-webkit-scrollbar-track {
   background: rgba(233, 228, 216, 0.1);
-  border-radius: 3px;
+  border-radius: 4px;
+  margin: 4px 0;
 }
 
 .reflection-text::-webkit-scrollbar-thumb {
-  background: rgba(224, 57, 45, 0.5);
-  border-radius: 3px;
+  background: rgba(224, 57, 45, 0.7);
+  border-radius: 4px;
+  border: 1px solid rgba(233, 228, 216, 0.1);
 }
 
 .reflection-text::-webkit-scrollbar-thumb:hover {
-  background: rgba(224, 57, 45, 0.7);
+  background: rgba(224, 57, 45, 0.9);
 }
 
-/* Responsive Design */
+/* =============================
+   Mobile Responsive Design
+============================= */
+
 @media (max-width: 1024px) {
   .reflection-layout {
     grid-template-columns: 250px 1fr;
@@ -1068,53 +1089,115 @@ body {
 }
 
 @media (max-width: 768px) {
+  .reflections-nav {
+    padding: 0 0.5rem;
+    margin-bottom: 1.5rem;
+    background: rgba(23, 23, 28, 0.1);
+    border-radius: 12px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  
   .reflections-card {
     padding: 1.5rem;
+    min-height: auto;
+    height: auto;
+    overflow: visible;
+  }
+  
+  .reflections-container {
+    min-height: auto;
+    height: auto;
+  }
+  
+  .reflection-item {
+    min-height: auto;
+  }
+  
+  .reflection-item.active {
+    min-height: auto;
   }
   
   .reflection-layout {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    min-height: 600px;
   }
   
   .reflection-photo-section {
     position: static;
     text-align: center;
+    order: 1;
   }
   
   .reflection-photo {
-    height: 220px;
-    max-width: 300px;
+    height: 200px;
+    max-width: 280px;
     margin: 0 auto;
   }
   
   .reflection-content {
     padding-right: 0;
+    order: 2;
+    min-height: 400px;
   }
   
-  .reflections-nav {
-    padding: 0 0.5rem;
-    margin-bottom: 1.5rem;
+  .reflection-text {
+    max-height: none;
+    padding-right: 1rem;
+    padding-left: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .photo-caption {
+    margin-bottom: 1rem;
   }
   
   .reflection-arrow {
     width: 45px;
     height: 45px;
     font-size: 1.3rem;
+    background: rgba(233, 228, 216, 0.15);
+    border: 1px solid rgba(233, 228, 216, 0.3);
+  }
+  
+  .indicator {
+    width: 12px;
+    height: 12px;
   }
 }
 
 @media (max-width: 480px) {
+  .reflections-nav {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
   .reflections-card {
     padding: 1rem;
   }
   
+  .reflection-layout {
+    min-height: 550px;
+  }
+  
+  .reflection-content {
+    min-height: 350px;
+  }
+  
   .reflection-title {
     font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
   
   .reflection-text p {
     font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .reflection-text {
+    padding-right: 0.75rem;
+    padding-left: 0.25rem;
   }
   
   .reflection-arrow {
@@ -1127,6 +1210,260 @@ body {
     width: 10px;
     height: 10px;
   }
+}
+/* =============================
+   Mobile Responsive Fixes
+============================= */
+
+@media (max-width: 768px) {
+  .reflections-container {
+    min-height: 500px; /* Increased for mobile */
+    overflow: visible;
+  }
+  
+  .reflection-item {
+    min-height: 500px;
+  }
+  
+  .reflection-text {
+    max-height: 400px; /* Generous height for mobile */
+  }
+  
+  .reflection-content {
+    padding-right: 0;
+    min-height: 400px;
+  }
+  
+  .reflections-card {
+    padding: 1.5rem;
+    min-height: 600px; /* Ensure card is tall enough */
+  }
+}
+
+@media (max-width: 480px) {
+  .reflections-container {
+    min-height: 450px;
+  }
+  
+  .reflection-item {
+    min-height: 450px;
+  }
+  
+  .reflection-text {
+    max-height: 350px; /* Still generous for small screens */
+  }
+  
+  .reflection-content {
+    min-height: 350px;
+  }
+  
+  .reflections-card {
+    padding: 1rem;
+    min-height: 550px;
+  }
+}
+
+/* Ensure smooth scrolling works */
+.reflection-text::-webkit-scrollbar {
+  width: 8px; /* Slightly wider for easier mobile use */
+}
+
+.reflection-text::-webkit-scrollbar-track {
+  background: rgba(233, 228, 216, 0.1);
+  border-radius: 4px;
+}
+
+.reflection-text::-webkit-scrollbar-thumb {
+  background: rgba(224, 57, 45, 0.6);
+  border-radius: 4px;
+}
+
+.reflection-text::-webkit-scrollbar-thumb:hover {
+  background: rgba(224, 57, 45, 0.8);
+}
+
+/* =============================
+   Mobile Navigation and Padding Fixes
+============================= */
+
+/* Ensure navigation controls are always visible */
+.reflections-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 10; /* Ensure it's above other content */
+}
+
+.reflection-arrow {
+  background: rgba(233, 228, 216, 0.1);
+  border: 1px solid rgba(233, 228, 216, 0.2);
+  color: var(--ink);
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* Don't let buttons shrink */
+}
+
+.reflection-indicators {
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0; /* Don't let indicators shrink */
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(233, 228, 216, 0.3);
+  border: 1px solid rgba(233, 228, 216, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+/* Add padding to text for scrollbar spacing */
+.reflection-text {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 1.5rem; /* Increased padding for scrollbar space */
+  padding-left: 0.5rem; /* Add left padding too */
+  scroll-behavior: smooth;
+  max-height: none;
+}
+
+/* =============================
+   Mobile Specific Fixes
+============================= */
+
+@media (max-width: 768px) {
+  /* Ensure nav is always visible on mobile */
+  .reflections-nav {
+    padding: 0 0.5rem;
+    margin-bottom: 1.5rem;
+    background: rgba(23, 23, 28, 0.1); /* Subtle background to make it stand out */
+    border-radius: 12px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  
+  .reflection-arrow {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+    background: rgba(233, 228, 216, 0.15); /* Slightly more visible on mobile */
+    border: 1px solid rgba(233, 228, 216, 0.3);
+  }
+  
+  .reflection-arrow:hover {
+    background: rgba(224, 57, 45, 0.2);
+    border-color: var(--accent);
+    transform: scale(1.05);
+  }
+  
+  .reflection-arrow:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .indicator {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .indicator.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    box-shadow: 0 0 10px rgba(224, 57, 45, 0.4);
+  }
+  
+  /* Text padding adjustments for mobile */
+  .reflection-text {
+    padding-right: 1rem; /* Less padding on mobile since scrollbar is thinner */
+    padding-left: 0.25rem;
+    margin-bottom: 1rem; /* Add bottom margin */
+  }
+  
+  /* Make sure the entire reflection layout is visible */
+  .reflection-item.active {
+    position: static;
+    height: auto;
+    min-height: auto; /* Remove min-height constraints */
+  }
+  
+  /* Ensure the card shows all content */
+  .reflections-card {
+    padding: 1.5rem;
+    min-height: auto; /* Remove fixed height */
+    height: auto;
+    overflow: visible;
+  }
+  
+  .reflections-container {
+    min-height: auto; /* Remove fixed height */
+    height: auto;
+    position: relative;
+  }
+}
+
+@media (max-width: 480px) {
+  .reflections-nav {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .reflection-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .reflection-text {
+    padding-right: 0.75rem;
+    padding-left: 0.25rem;
+  }
+  
+  .reflections-card {
+    padding: 1rem;
+  }
+}
+
+/* Enhanced scrollbar visibility */
+.reflection-text::-webkit-scrollbar {
+  width: 8px;
+}
+
+.reflection-text::-webkit-scrollbar-track {
+  background: rgba(233, 228, 216, 0.1);
+  border-radius: 4px;
+  margin: 4px 0; /* Add margin to track */
+}
+
+.reflection-text::-webkit-scrollbar-thumb {
+  background: rgba(224, 57, 45, 0.7);
+  border-radius: 4px;
+  border: 1px solid rgba(233, 228, 216, 0.1); /* Add border for better visibility */
+}
+
+.reflection-text::-webkit-scrollbar-thumb:hover {
+  background: rgba(224, 57, 45, 0.9);
 }
 
 /* =============================
