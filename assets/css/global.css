@@ -93,6 +93,11 @@ html{ background: var(--bg-deep); }
   font-size: 1.2rem; letter-spacing: .16em; opacity: .85; margin-top: .6rem; text-transform: uppercase;
 }
 
+/* Mobile-only: place dates on a new line under subtitle */
+@media (max-width: 540px){
+  .artist-subtitle .dates{ display: block; margin-top: .2rem; }
+}
+
 /* Nav */
 .site-nav{
   position: sticky; top: 0; z-index: 100;
