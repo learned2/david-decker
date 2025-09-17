@@ -6,7 +6,8 @@
   // Load list
   let photos = [];
   try {
-    const res = await fetch('/photos.json', { cache: 'no-store' });
+    // Use a relative path so it works on GitHub Pages project sites (no domain-root slash)
+    const res = await fetch('photos.json', { cache: 'no-store' });
     photos = await res.json();
   } catch (e) {
     console.warn('Could not load photos.json', e);
