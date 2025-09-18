@@ -1,19 +1,19 @@
 [
   {
-    "title": "Memory Fragment I",
+    "title": "Jimmy J. Take a Holiday",
     "image": "data/photos/photo1.jpg",
-    "medium": "Mixed Media on Canvas",
+    "medium": "Etching on paper",
     "year": "Unknown",
-    "story": "This piece explores the fragmented nature of memory, using layered textures and abstract forms to represent how we reconstruct our past experiences.",
-    "tags": ["memory-series", "painting"]
+    "story": "This 15 by 11.5 intaglio piece is a portrait of one of Decker's favorite authors, James Joyce.",
+    "tags": ["etch", "lit"]
   },
   {
     "title": "Pomergranate Lovers",
     "image": "data/photos/photo2.jpg",
-    "medium": "Digital Collage",
+    "medium": "Etching on paper",
     "year": "Unknown",
-    "story": "An exploration of how technology shapes our perception of reality, blending traditional and digital mediums.",
-    "tags": ["digital", "memory-series"]
+    "story": "A 8 by 10 inch color etching.",
+    "tags": ["etch"]
   },
   {
     "title": "Untitled",
@@ -40,7 +40,7 @@
     "tags": ["painting"]
   },
   {
-    "title": "Unknown 1",
+    "title": "Opera in Vout",
     "image": "data/photos/photo7.jpg",
     "medium": "Paint on plywood cut-outs",
     "year": "Unknown",
@@ -48,27 +48,27 @@
     "tags": ["wood", "jazz"]
   },
   {
-    "title": "Unknown 2",
+    "title": "Wapping Chronicle",
     "image": "data/photos/photo8.jpg",
-    "medium": "Acrylic on Canvas",
+    "medium": "Etching on paper",
     "year": "Unknown",
-    "story": "Bold colors and dynamic forms showcase David's mature style and confident brushwork.",
-    "tags": ["painting"]
+    "story": "A 22 inch by 30 inch intaglio. ",
+    "tags": ["etch", "lit"]
   },
   {
-    "title": "Unknown 3",
+    "title": "The Scene is Clean",
     "image": "data/photos/photo9.jpg",
-    "medium": "Acrylic on Canvas",
+    "medium": "Etching on paper",
     "year": "Unknown",
-    "story": "Bold colors and dynamic forms showcase David's mature style and confident brushwork.",
+    "story": "A 24 by 30 inch etching depicting a jazz guitarist - likely Wes Montgomery or Charlie Christian.",
     "tags": ["painting"]
   },
   {
-    "title": "Unknown 4",
+    "title": "Krapp's Last Tub",
     "image": "data/photos/photo10.jpg",
     "medium": "Paint on plywood cut-outs",
     "year": "Unknown",
-    "story": "Bold colors and dynamic forms showcase David's mature style and confident brushwork.",
+    "story": "This painted enamel plywood piece is a allusion to Krapp’s Last Tape (1958) a one-act play by Samuel Beckett, written for actor Patrick Magee and later considered one of Beckett’s major works. It portrays Krapp, an aging man, as he listens to recordings of his younger self reflecting on ambition, love, and loss, while making a new recording that reveals his bitterness and decline. The play explores themes of memory, regret, and the passage of time through the metaphor of tape recordings, set against stark imagery of light and dark.",
     "tags": ["wood", "lit"]
   }, 
   {
@@ -96,16 +96,16 @@
     "tags": ["ink", "lit"]
   },
   {
-    "title": "Unknown 8",
+    "title": "Just Desserts",
     "image": "data/photos/photo14.jpg",
     "medium": "Etching on paper",
     "year": "Unknown",
-    "story": "A theatrical figure rendered with dramatic shading, holding a symbolic object.",
+    "story": "Also called the 'Chef Bewitcher'. A 21 by 12 inch intaglio depeicting a chef rendered with dramatic shading, holding a symbolic object.",
     "tags": ["etch", "lit"]
   },
   {
     "title": "Unknown 9",
-    "image": "data/photos/photo15.jpg",
+    "image": "data/photos/photo15.jpg", 
     "medium": "Pen and ink on paper",
     "year": "Unknown",
     "story": "A nocturnal scene where dogs and human figures emerge from stark black surroundings.",
@@ -168,23 +168,23 @@
     "tags": ["etch", "lit"]
   },
   {
-    "title": "Unknown 17",
+    "title": "Men Moistening their Gums",
     "image": "data/photos/photo23.jpg",
     "medium": "Pen and ink on paper",
-    "year": "Unknown",
-    "story": "Two sharply dressed men with a dog and a jazz band in the background, rich with atmosphere.",
-    "tags": ["ink", "jazz", "lit"]
+    "year": "1986",
+    "story": "A 40 inch by 30 inch intaglio etching. Two sharply dressed men with a dog and a jazz band in the background, rich with atmosphere.",
+    "tags": ["etch", "jazz", "lit"]
   },
   {
-    "title": "Unknown 18",
+    "title": "Just Desserts II",
     "image": "data/photos/photo24.jpg",
     "medium": "Etching on paper",
     "year": "Unknown",
-    "story": "Expressive close-up portrait of a figure in a tall hat, defined by etched lines and tone.",
-    "tags": ["etch", "lit"]
+    "story": "A 16 inch by 12 inch intaglio. Expressive close-up portrait of a chef in a tall hat, defined by etched lines and tone.",
+    "tags": ["etch"]
   },
   {
-    "title": "Unknown 19",
+    "title": "Mercy H",
     "image": "data/photos/photo25.jpg",
     "medium": "Paint on plywood cut-outs",
     "year": "Unknown",
@@ -208,35 +208,35 @@
     "tags": ["ink", "jazz"]
   },
   {
-    "title": "Unknown 22",
+    "title": "Billy Loves Lester",
     "image": "data/photos/photo28.jpg",
     "medium": "Paint on plywood cut-out",
     "year": "Unknown",
-    "story": "Tall, elegant wood relief of a woman in a black dress, accented with a white flower.",
-    "tags": ["wood", "lit"]
+    "story": "A 56 by 24 inch tall, elegant polychrome wood relief of depicting Billy Holiday in a black dress, accented with a white flower. The title hints at the friendship and collaboration between the two jazz musicians, Holiday and Lester Young. To read more about Billy and Lester please see this article here [Billie Holiday and Lester Young: the intimate friendship between Lady Day and Prez - The Guardian](https://www.theguardian.com/music/2015/apr/08/billie-holiday-and-lester-young-friendship-between-lady-day-and-prez)",
+    "tags": ["wood", "jazz"]
   },
   {
-    "title": "Unknown 23",
+    "title": "The Cocktail Party",
     "image": "data/photos/photo29.jpg",
-    "medium": "Paint on plywood cut-out",
-    "year": "Unknown",
-    "story": "A lively dinner party scene with elegantly dressed figures gathered around a table.",
-    "tags": ["wood", "lit"]
+    "medium": "Enamel on plywood",
+    "year": "1977",
+    "story": "A lively dinner party scene with elegantly dressed figures gathered around a table. 48 inches by 96.",
+    "tags": ["wood"]
   },
   {
-    "title": "Unknown 24",
+    "title": "Moonscapes",
     "image": "data/photos/photo30.jpg",
     "medium": "Paint on plywood cut-out",
     "year": "Unknown",
     "story": "A reclining nude figure blends seamlessly with a mountainous landscape under a yellow sky.",
-    "tags": ["wood", "lit"]
+    "tags": ["wood"]
   },
   {
-    "title": "Unknown 25",
+    "title": "Molly Bloom's Dream",
     "image": "data/photos/photo31.jpg",
     "medium": "Etching on paper",
     "year": "Unknown",
-    "story": "A red-toned intaglio print juxtaposing reclining figures with abstract circular forms.",
+    "story": "A 7 by 4 inch red-toned intaglio print juxtaposing reclining figures with abstract circular forms.",
     "tags": ["etch", "lit"]
   },
   {
@@ -280,15 +280,15 @@
     "tags": ["ink", "lit"]
   }, 
   {
-    "title": "Unknown 32",
+    "title": "The Winner of the Slow Bike Race",
     "image": "data/photos/photo38.jpg",
     "medium": "Mixed media on paper",
     "year": "Unknown",
-    "story": "Expressive figure on a bicycle, rendered with strong use of color and gesture.",
+    "story": "Expressive figure on a bicycle, rendered with strong use of color and gesture. 24 by 60 inches. ",
     "tags": ["ink"]
   },
   {
-    "title": "Mumgan's Bath",
+    "title": "Mulli gan's Bath",
     "image": "data/photos/photo39.jpg",
     "medium": "Intaglio print on paper",
     "year": "1981",
@@ -312,43 +312,43 @@
     "tags": ["etch", "lit"]
   },
   {
-    "title": "Unknown 36",
+    "title": "Beachette",
     "image": "data/photos/photo42.jpg",
     "medium": "Intaglio print on paper with hand-coloring",
-    "year": "Unknown",
-    "story": "Two figures locked in a raw, emotional embrace, accented with color.",
+    "year": "1977",
+    "story": "A 18 by 36 inch etching depicting two figures locked in a raw, emotional embrace, accented with color.",
     "tags": ["etch"]
   },
   {
     "title": "Vico's Dreams",
     "image": "data/photos/photo43.jpg",
-    "medium": "Intaglio print on paper",
+    "medium": "Lithograph",
     "year": "1977",
-    "story": "Portrait of two figures, rendered with strong cross-hatching and dramatic hand gestures.",
-    "tags": ["etch"]
+    "story": "A 30 by 18 inch black and white lithograph. Portrait of two figures, rendered with strong cross-hatching and dramatic hand gestures.",
+    "tags": ["litho"]
   },
   {
-    "title": "Unknown 38",
+    "title": "Mercy Humpe Sue La Plage",
     "image": "data/photos/photo44.jpg",
-    "medium": "Intaglio print on paper with hand-coloring",
+    "medium": "Color lithograph",
     "year": "Unknown",
-    "story": "A contemplative figure in swimwear set against a sparse seascape.",
-    "tags": ["etch"]
+    "story": "A 24 inch by 39 unch color lithograph. A contemplative figure in swimwear set against a sparse seascape.",
+    "tags": ["litho"]
   },
   {
-    "title": "Unknown 39",
+    "title": "Youth's Magic Horn",
     "image": "data/photos/photo45.jpg",
     "medium": "Intaglio print on paper",
     "year": "Unknown",
-    "story": "Playful and surreal picnic-like gathering under a tree, featuring musicians and champagne.",
+    "story": "A 9 inch by 7 inch intaglio piece. Playful and surreal picnic-like gathering under a tree, featuring musicians and champagne.",
     "tags": ["etch", "jazz"]
   },
   {
-    "title": "Unknown 40",
+    "title": "Krapp's Last Tub II",
     "image": "data/photos/photo46.jpg",
     "medium": "Intaglio print on paper",
     "year": "Unknown",
-    "story": "Playful and surreal picnic-like gathering under a tree, featuring musicians and champagne.",
+    "story": "A 20 by 26 inch etching. Another allustion to the Beckett play 'Krapp's Last Stand'.",
     "tags": ["etch", "lit"]
   },
   {
