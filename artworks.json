@@ -16,7 +16,7 @@
     "tags": ["etch"]
   },
   {
-    "title": "Untitled",
+    "title": "Untitled I",
     "image": "data/photos/photo3.jpg",
     "medium": "Oil on Canvas",
     "year": "Unknown",
@@ -72,7 +72,7 @@
     "tags": ["wood", "lit"]
   }, 
   {
-    "title": "Unknown 5",
+    "title": "Untitled II",
     "image": "data/photos/photo11.jpg",
     "medium": "Paint on plywood cut-outs",
     "year": "Unknown",
@@ -80,7 +80,7 @@
     "tags": ["lit"]
   },
   {
-    "title": "Unknown 6",
+    "title": "Untitled III",
     "image": "data/photos/photo12.jpg",
     "medium": "Paint on plywood cut-outs",
     "year": "Unknown",
@@ -104,7 +104,7 @@
     "tags": ["etch", "lit"]
   },
   {
-    "title": "Unknown 9",
+    "title": "Untitled IV",
     "image": "data/photos/photo15.jpg", 
     "medium": "Pen and ink on paper",
     "year": "Unknown",
@@ -120,7 +120,7 @@
     "tags": ["wood", "lit"]
   },
   {
-    "title": "Unknown 11",
+    "title": "Untitled V",
     "image": "data/photos/photo17.jpg",
     "medium": "Etching on paper",
     "year": "Unknown",
@@ -136,7 +136,7 @@
     "tags": ["ink", "lit"]
   },
   {
-    "title": "Unknown 13",
+    "title": "Untitled VI",
     "image": "data/photos/photo19.jpg",
     "medium": "Etching on paper",
     "year": "Unknown",
@@ -144,7 +144,7 @@
     "tags": ["etch", "jazz"]
   },
   {
-    "title": "Unknown 14",
+    "title": "Untitled VII",
     "image": "data/photos/photo20.jpg",
     "medium": "Paint",
     "year": "Unknown",
@@ -152,7 +152,7 @@
     "tags": ["lit"]
   },
   {
-    "title": "Unknown 15",
+    "title": "Untitled VIII",
     "image": "data/photos/photo21.jpg",
     "medium": "Paint on plywood cut-out",
     "year": "Unknown",
@@ -160,7 +160,7 @@
     "tags": ["wood", "lit", "jazz"]
   },
   {
-    "title": "Unknown 16",
+    "title": "Untitled IX",
     "image": "data/photos/photo22.jpg",
     "medium": "Etching on paper",
     "year": "Unknown",
@@ -192,7 +192,7 @@
     "tags": ["wood", "lit"]
   },
   {
-    "title": "Unknown 20",
+    "title": "Untitled X",
     "image": "data/photos/photo26.jpg",
     "medium": "Pen and ink on paper",
     "year": "Unknown",
@@ -200,7 +200,7 @@
     "tags": ["ink", "jazz"]
   },
   {
-    "title": "Unknown 21",
+    "title": "Untitled XI",
     "image": "data/photos/photo27.jpg",
     "medium": "Pen and ink on paper",
     "year": "Unknown",
@@ -240,7 +240,7 @@
     "tags": ["etch", "lit"]
   },
   {
-    "title": "Unknown 27",
+    "title": "Untitled XII",
     "image": "data/photos/photo33.jpg",
     "medium": "Etching on paper",
     "year": "Unknown",
@@ -248,7 +248,7 @@
     "tags": ["etch", "lit"]
   },
   {
-    "title": "Unknown 28",
+    "title": "Untitled XIII",
     "image": "data/photos/photo34.jpg",
     "medium": "Graphite on paper",
     "year": "Unknown",
@@ -264,7 +264,7 @@
     "tags": ["etch", "lit"]
   },
   {
-    "title": "Unknown 30",
+    "title": "Untitled XIV",
     "image": "data/photos/photo36.jpg",
     "medium": "Etching on paper",
     "year": "Unknown",
@@ -272,7 +272,7 @@
     "tags": ["etch", "lit"]
   },
   {
-    "title": "Unknown 31",
+    "title": "Untitled XV",
     "image": "data/photos/photo37.jpg",
     "medium": "Pen and ink on paper",
     "year": "Unknown",
@@ -352,7 +352,7 @@
     "tags": ["etch", "lit"]
   },
   {
-    "title": "Unknown 41",
+    "title": "Untitled XVI",
     "image": "data/photos/photo47.jpg",
     "medium": "Intaglio print on paper",
     "year": "Unknown",
