@@ -67,8 +67,8 @@
     "title": "Krapp's Last Tub",
     "image": "data/photos/photo10.jpg",
     "medium": "Paint on plywood cut-outs",
-    "year": "Unknown",
-    "story": "This painted enamel plywood piece is a allusion to Krapp’s Last Tape (1958) a one-act play by Samuel Beckett, written for actor Patrick Magee and later considered one of Beckett’s major works. It portrays Krapp, an aging man, as he listens to recordings of his younger self reflecting on ambition, love, and loss, while making a new recording that reveals his bitterness and decline. The play explores themes of memory, regret, and the passage of time through the metaphor of tape recordings, set against stark imagery of light and dark.",
+    "year": "1976",
+    "story": "This  4 by 6 foot painted enamel plywood piece is a allusion to Krapp’s Last Tape (1958) a one-act play by Samuel Beckett, written for actor Patrick Magee and later considered one of Beckett’s major works. It portrays Krapp, an aging man, as he listens to recordings of his younger self reflecting on ambition, love, and loss, while making a new recording that reveals his bitterness and decline. The play explores themes of memory, regret, and the passage of time through the metaphor of tape recordings, set against stark imagery of light and dark.",
     "tags": ["wood", "lit"]
   }, 
   {
@@ -112,7 +112,7 @@
     "tags": ["ink", "lit"]
   },
   {
-    "title": "Orange",
+    "title": "Wave Lovers",
     "image": "data/photos/photo16.jpg",
     "medium": "Paint on plywood cut-out",
     "year": "Unknown",
@@ -120,10 +120,10 @@
     "tags": ["wood", "lit"]
   },
   {
-    "title": "Untitled V",
+    "title": "Chico's Coice",
     "image": "data/photos/photo17.jpg",
     "medium": "Etching on paper",
-    "year": "Unknown",
+    "year": "1974",
     "story": "A portrait of a saxophonist in deep concentration, captured with intricate linework.",
     "tags": ["etch", "jazz"]
   },
@@ -144,7 +144,7 @@
     "tags": ["etch", "jazz"]
   },
   {
-    "title": "Untitled VII",
+    "title": "Three Graces",
     "image": "data/photos/photo20.jpg",
     "medium": "Paint",
     "year": "Unknown",
@@ -152,7 +152,7 @@
     "tags": ["lit"]
   },
   {
-    "title": "Untitled VIII",
+    "title": "DancersS",
     "image": "data/photos/photo21.jpg",
     "medium": "Paint on plywood cut-out",
     "year": "Unknown",
@@ -216,7 +216,7 @@
     "tags": ["wood", "jazz"]
   },
   {
-    "title": "The Cocktail Party",
+    "title": "The Cocktail Party / Marienbad Meeting",
     "image": "data/photos/photo29.jpg",
     "medium": "Enamel on plywood",
     "year": "1977",
@@ -312,7 +312,7 @@
     "tags": ["etch", "lit"]
   },
   {
-    "title": "Beachette",
+    "title": "Beachettes",
     "image": "data/photos/photo42.jpg",
     "medium": "Intaglio print on paper with hand-coloring",
     "year": "1977",
@@ -328,10 +328,10 @@
     "tags": ["litho"]
   },
   {
-    "title": "Merci, Humpee Sue La Plage",
+    "title": "Merci Humpee Sue La Plage",
     "image": "data/photos/photo44.jpg",
     "medium": "Color lithograph",
-    "year": "Unknown",
+    "year": "1975",
     "story": "A 24 inch by 39 unch color lithograph. A contemplative figure in swimwear set against a sparse seascape.",
     "tags": ["litho"]
   },
@@ -347,7 +347,7 @@
     "title": "Krapp's Last Tub II",
     "image": "data/photos/photo46.jpg",
     "medium": "Intaglio print on paper",
-    "year": "Unknown",
+    "year": "1980",
     "story": "A 20 by 26 inch etching. Another allustion to the Beckett play 'Krapp's Last Stand'.",
     "tags": ["etch", "lit"]
   },
