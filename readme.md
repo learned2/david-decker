@@ -7,8 +7,8 @@ Created by: Stan Usovicz [github.com/learned2] in September 2025.
 
 ### Step 1: Add Photos
 
-1. Save your artwork images as PNG files (please use 1200x1600 pixle images for wide pieces and 1600x1200 for tall pieces for consistency)
-2. Name them using the format: `photo46.png`, `photo47.png`, etc. (continue numbering from 45)
+1. Save your artwork images as jpg files (please use 1200x1600 pixle images for wide pieces and 1600x1200 for tall pieces for consistency)
+2. Name them using the format: `photo48.jpg`, `photo49.jpg`, etc. (continue numbering from 47)
 3. Place the files in the `data/photos/` folder
 
 ### Step 2: Update the Gallery Data
@@ -19,7 +19,7 @@ Created by: Stan Usovicz [github.com/learned2] in September 2025.
 ```json
 {
   "title": "Artwork Title Here",
-  "image": "data/photos/photo46.png",
+  "image": "data/photos/photo46.jpg",
   "medium": "Description of medium (e.g., 'Pen & ink on paper')",
   "year": "Year created or 'Unknown'",
   "story": "Brief description or story about the piece",
@@ -41,7 +41,7 @@ Use these tags to categorize artworks:
 ```json
 {
   "title": "Morning Light",
-  "image": "data/photos/photo46.png",
+  "image": "data/photos/photo46.jpg",
   "medium": "Pen & ink on paper",
   "year": "1985",
   "story": "A delicate study of light filtering through trees, capturing the quiet beauty of dawn.",
