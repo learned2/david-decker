@@ -152,7 +152,7 @@
     "tags": ["lit"]
   },
   {
-    "title": "DancersS",
+    "title": "Dancers",
     "image": "data/photos/photo21.jpg",
     "medium": "Paint on plywood cut-out",
     "year": "Unknown",
@@ -207,14 +207,14 @@
     "story": "A vibrant jazz scene with musicians in mid-performance, etched with lively strokes.",
     "tags": ["ink", "jazz"]
   },
-  {
+{
     "title": "Billy Loves Lester",
     "image": "data/photos/photo28.jpg",
     "medium": "Paint on plywood cut-out",
     "year": "Unknown",
-    "story": "A 56 by 24 inch tall, elegant polychrome wood relief of depicting Billy Holiday in a black dress, accented with a white flower. The title hints at the friendship and collaboration between the two jazz musicians, Holiday and Lester Young. To read more about Billy and Lester please see this article here [Billie Holiday and Lester Young: the intimate friendship between Lady Day and Prez - The Guardian](https://www.theguardian.com/music/2015/apr/08/billie-holiday-and-lester-young-friendship-between-lady-day-and-prez)",
+    "story": "A 56 by 24 inch tall, elegant polychrome wood relief depicting Billie Holiday in a black dress, accented with a white flower. The title hints at the friendship and collaboration between Holiday and Lester Young. To read more about Billy and Lester please see this article: https://www.theguardian.com/music/2015/apr/08/billie-holiday-and-lester-young-friendship-between-lady-day-and-prez",
     "tags": ["wood", "jazz"]
-  },
+},
   {
     "title": "The Cocktail Party / Marienbad Meeting",
     "image": "data/photos/photo29.jpg",
@@ -288,7 +288,7 @@
     "tags": ["ink"]
   },
   {
-    "title": "Mulli gan's Bath",
+    "title": "Mulligan's Bath",
     "image": "data/photos/photo39.jpg",
     "medium": "Intaglio print on paper",
     "year": "1981",
@@ -328,11 +328,11 @@
     "tags": ["litho"]
   },
   {
-    "title": "Merci Humpee Sue La Plage",
+    "title": "Mercy Humppe Sue La Plage",
     "image": "data/photos/photo44.jpg",
     "medium": "Color lithograph",
     "year": "1975",
-    "story": "A 24 inch by 39 unch color lithograph. A contemplative figure in swimwear set against a sparse seascape.",
+    "story": "A 24 inch by 39 unch color lithograph. A contemplative woman, Marcy, in swimwear set against a sparse seascape intended as an homage to the 1969 film ['Can Heironymus Merkin Ever Forget Mercy Humppe and Find True Happiness?'](https://en.wikipedia.org/wiki/Can_Heironymus_Merkin_Ever_Forget_Mercy_Humppe_and_Find_True_Happiness%3F). In the film, the character Hieronymus Merkin, approaching forty, creates a film reflecting on his life, portraying himself as a puppet controlled by unseen forces. Guided by the mischievous Goodtime Eddie Filth, he drifts from innocence into womanizing, haunted only by his lost love, Mercy Humppe. As the producers demand a conclusion, Merkin is forced to confront his past and question whether he has gained any true wisdom from his experiences.",
     "tags": ["litho"]
   },
   {
