@@ -35,6 +35,7 @@ Use these tags to categorize artworks:
 - `"etch"` - Intaglio prints
 - `"jazz"` - Jazz-themed pieces
 - `"lit"` - Literature-themed pieces
+- `"litho"` = Lithographs
 
 ### Example Entry
 
