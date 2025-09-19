@@ -18,10 +18,10 @@
   {
     "title": "Untitled I",
     "image": "data/photos/photo3.jpg",
-    "medium": "Oil on Canvas",
+    "medium": "Pen and ink on paper",
     "year": "Unknown",
     "story": "One of David's earlier works, showcasing his mastery of traditional painting techniques.",
-    "tags": ["early-works", "painting"]
+    "tags": ["etch"]
   },
   {
     "title": "What is there to say?",
@@ -328,7 +328,7 @@
     "tags": ["litho"]
   },
   {
-    "title": "Mercy Humpe Sue La Plage",
+    "title": "Merci, Humpee Sue La Plage",
     "image": "data/photos/photo44.jpg",
     "medium": "Color lithograph",
     "year": "Unknown",
